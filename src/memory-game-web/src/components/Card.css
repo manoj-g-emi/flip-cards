@@ -1,0 +1,62 @@
+
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  outline: none;
+  user-select: none;
+  position: relative;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #444;
+  letter-spacing: 1px;
+}
+
+.card.flipped {
+  background-color: #fffde7;
+  color: #222;
+  transform: scale(1.08);
+  border-color: #ffe082;
+  box-shadow: 0 4px 16px rgba(251,192,45,0.13);
+}
+
+.card.matched {
+  background-color: #d0ffd6;
+  border-color: #81c784;
+  color: #222;
+  cursor: default;
+  box-shadow: 0 2px 8px rgba(129,199,132,0.13);
+}
+
+.card:active {
+  transform: scale(0.97);
+}
+
+.card.flipped {
+  background: #ffe082;
+  color: #222;
+  transform: scale(1.05);
+  border-color: #fbc02d;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
